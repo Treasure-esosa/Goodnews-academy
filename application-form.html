@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Application Form</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>School Application Form</h2>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Student Information</legend>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Parent/Guardian Information</legend>
+                <label for="guardian-name">Full Name:</label>
+                <input type="text" id="guardian-name" name="guardian-name" required>
+
+                <label for="relationship">Relationship to Student:</label>
+                <input type="text" id="relationship" name="relationship" required>
+
+                <label for="guardian-phone">Phone Number:</label>
+                <input type="tel" id="guardian-phone" name="guardian-phone" required>
+
+                <label for="guardian-email">Email Address:</label>
+                <input type="email" id="guardian-email" name="guardian-email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Educational Details</legend>
+                <label for="grade">Grade Applying For:</label>
+                <input type="text" id="grade" name="grade" required>
+
+                <label for="current-school">Current School (if applicable):</label>
+                <input type="text" id="current-school" name="current-school">
+
+                <label for="reason">Reason for Applying:</label>
+                <textarea id="reason" name="reason" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Emergency Contact Information</legend>
+                <label for="emergency-name">Emergency Contact Name:</label>
+                <input type="text" id="emergency-name" name="emergency-name" required>
+
+                <label for="emergency-phone">Emergency Contact Phone Number:</label>
+                <input type="tel" id="emergency-phone" name="emergency-phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Declaration</legend>
+                <label>
+                    <input type="checkbox" name="agree" required> I hereby declare that the information provided is accurate.
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>
